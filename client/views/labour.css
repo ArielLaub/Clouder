@@ -1,0 +1,99 @@
+body {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+    font-size: 16px !important;
+    //background-color: rgb(241, 242, 246);
+}
+.login-form {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+
+
+    width: 400px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.login-form h3 {
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
+.login-form .login-button {
+    margin-top: 20px;
+}
+.field-container {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+
+    padding: 5px;
+}
+
+.login-form  input {
+    width: 200px;
+    float: right;
+}
+
+.login-form label {
+    padding-top: 3px;
+    float: left;
+}
+
+.login-form .btn {
+    font-size: 16px;
+}
+
+.home-page {
+    width: 300px;
+    vertical-align: middle;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.dropdown-menu {
+    background-color: #434a54;
+    border: none;
+}
+
+.dropdown-menu li a {
+    padding: 5px 20px;
+    color: #fff;
+}
+

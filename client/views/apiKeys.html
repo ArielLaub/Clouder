@@ -1,0 +1,31 @@
+<div ng-controller="ApiKeysController" class="api-keys-form well">
+    <h3>Api Keys</h3>
+    <table style="margin: auto; white-space: nowrap; width: 80%" class="table table-striped">
+        <thead>
+        <tr>
+            <th style="width: 100%">Api Key</th>
+            <th style="">Api Secret</th>
+            <th style="width: 50px">Status</th>
+            <th style="width: 50px">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="apiKey in apiKeys">
+            <td>{{apiKey.id}}</td>
+            <td style="vertical-align: middle">********** <h6 style="display: inline">(<a>show</a>)</h6></td>
+            <td style="text-align: center">
+                <span style="font-size: 24px" class="glyphicon" ng-class="(apiKey.status=='ENABLED')?['glyphicon-ok-circle','text-success']:['glyphicon-ban-circle','text-danger']"></span>
+            </td>
+            <td>
+                <button class="btn status-button" ng-class="(apiKey.status=='ENABLED')?'btn-warning':'btn-success'">
+                    <span class="glyphicon" ng-class="(apiKey.status=='ENABLED')?'glyphicon-eye-close':'glyphicon-eye-open'""></span>
+                </button>
+                <button class="btn btn-danger delete-button">
+                    <span class="glyphicon glyphicon-trash"></span>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <button ng-click="createApiKey()" type="button" class="btn btn-primary btn-block create-api-key-button">Create</button>
+</div>

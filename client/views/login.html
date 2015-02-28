@@ -1,0 +1,17 @@
+<div ng-controller="LoginController" class="login-form well">
+    <h3>Sign In</h3>
+    <div ng-show="loginFailed" class="alert alert-danger">
+        <strong>Wrong email/password!</strong> Please try again.</div>
+    <div class="field-container">
+        <label for="email">Email:</label>
+        <input ng-model="email" type="text" id="email" class="email" placeholder="email" type="email">
+    </div>
+    <div class="field-container">
+        <label for="password">Password:</label>
+        <input ng-model="password" type="password" id="password" class="password" placeholder="password"/>
+    </div>
+    <div class="field-container">
+        <button ng-click="login()" ng-class="{disabled: loggingIn}" type="button" class="btn btn-primary btn-block login-button">Login</button>
+        <div ng-show="loginResult">{{loginResult}}</div>
+    </div>
+</div>
